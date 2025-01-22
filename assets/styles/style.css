@@ -22,3 +22,24 @@ body {
   background-repeat: no-repeat;
   background-position: top;
 }
+
+.container{
+  max-width: 1600px;
+  padding: 0 2rem;
+  margin: 0 0;
+}
+
+.quiz{
+  margin: 1rem 0;
+  width: 1300px;
+  height: 200px;;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  border: black solid 1px;
+  border-radius: 10px 20px 30px 40px
+}
+
+.question-container {
+  position: relative;
+}
