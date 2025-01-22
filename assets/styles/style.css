@@ -17,8 +17,63 @@ img {
 }
 
 body {
+  font-family: 'DynaPuff';
   background-image: url(./background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+}
+
+:root {
+  --dark-orange: #ed9455;
+  --orange: #ffbb70;
+  --yellow: #ffec9e;
+  --light-yellow: #fffbda;
+}
+
+/* Utility Class */
+
+.container {
+  max-width: 1350px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+/* Navbar */
+
+.navbar a {
+  display: block;
+}
+
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2rem ;
+}
+
+.navbar-menu a {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  background-color: var(--light-yellow);
+  width: 250px;
+  height: 90px;
+  border: solid var(--dark-orange) 4px;
+  border-radius: 25px;
+}
+
+.navbar-menu a h3 {
+  color: #000;
+  font-family: DynaPuff;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
