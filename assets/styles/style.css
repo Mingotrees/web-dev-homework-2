@@ -87,7 +87,9 @@ body {
 
 /* Title  */
 
-
+.title {
+  margin-top: 2rem;
+}
 
 .title {
   position: relative;
@@ -112,11 +114,11 @@ body {
 .title .learn {
   transform: rotate(0.658deg);
   flex-shrink: 0;
-  color: #ffec9e; /* Text color */
+  color: #ffec9e;
   paint-order: stroke fill;
   -webkit-text-stroke-width: 10px;
-  -webkit-text-stroke-color: #ed9455; /* Stroke color */
-  text-shadow: 7px 4px 1px #b8794d; /* Shadow behind the stroke */
+  -webkit-text-stroke-color: #ed9455;
+  text-shadow: 7px 4px 1px #b8794d;
   font-family: DynaPuff;
   font-size: 96px;
   font-style: normal;
@@ -129,16 +131,15 @@ body {
   position: absolute;
   margin-top: 1.4rem;
   margin-left: 7rem;
-  color: var(--yellow); /* Text color */
+  color: var(--yellow);
   paint-order: stroke fill;
-  -webkit-text-fill-color: var(--yellow); /* Fill the text color */
+  -webkit-text-fill-color: var(--yellow);
   -webkit-text-stroke-width: 10px;
-  -webkit-text-stroke-color: var(--dark-orange); /* Stroke color */
-  text-shadow: 7px 4px 1px #b8794d; /* Shadow behind the stroke */
+  -webkit-text-stroke-color: var(--dark-orange);
+  text-shadow: 7px 4px 1px #b8794d;
   font-family: DynaPuff;
   font-size: 128px;
   font-style: normal;
   font-weight: 400;
   line-height: 2;
 }
-
