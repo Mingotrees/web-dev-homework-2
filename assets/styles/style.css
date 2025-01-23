@@ -89,6 +89,7 @@ label{
 
 label:hover{
   background-color: var(--dark-orange);
+  border-radius: 40px;
 }
 
 input[type="radio"]:checked{
@@ -114,6 +115,7 @@ label input[type="radio"]#c_a:checked{
 .correct-answer{
   opacity: 0;
   transition: opacity 0.4s ease-in;
+  margin-left: 20px;
 }
 
 input[type = "radio"]:checked + span + .correct-answer{
@@ -125,9 +127,9 @@ input[type = "radio"]:checked + span + .correct-answer{
   opacity: 0;
   color: rgb(231, 11, 11);
   transition: opacity 0.4s ease;
+  margin-left: 20px;
 }
 
 input[type = "radio"]:checked + span + .wrong-answer{
   opacity: 1;
 }
-
