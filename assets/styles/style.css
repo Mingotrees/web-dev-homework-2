@@ -23,23 +23,111 @@ body {
   background-position: top;
 }
 
+:root {
+  --dark-orange: #ed9455;
+  --orange: #ffbb70;
+  --yellow: #ffec9e;
+  --light-yellow: #fffbda;
+}
+
 .container{
   max-width: 1600px;
   padding: 0 2rem;
-  margin: 0 0;
+  margin: 0 auto;
 }
+
 
 .quiz{
-  margin: 1rem 0;
-  width: 1300px;
-  height: 200px;;
   display: flex;
   flex-direction: column;
-  justify-self: center;
-  border: black solid 1px;
-  border-radius: 10px 20px 30px 40px
 }
 
-.question-container {
-  position: relative;
+.item{
+  margin: 1rem auto;
+  width: 90%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 40px;
+  background-color: var(--yellow);;
+  padding: 0.5rem;
+  box-shadow: 5px 10px var(--dark-orange);
+  border: #444 solid;
 }
+
+.question{
+  margin: 1rem 1rem;
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.question h2 {
+  margin: 1rem 1rem;
+  text-shadow: 7px 4px 0px #B8794D;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--dark-orange);
+  font-family: 'Dynapuff';
+  font-weight:bold;
+  color: var(--light-yellow);
+  font-size: 40px;
+}
+
+.question label{
+  padding-left: 2.8rem;
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Dynapuff';
+  font-weight: bold;
+}
+
+label{
+  margin-bottom: 5px;
+}
+
+label:hover{
+  background-color: var(--dark-orange);
+}
+
+input[type="radio"]:checked{
+  accent-color: red;
+}
+
+label input[type="radio"]#c_a:checked{
+  accent-color: green;
+}
+
+.radio-btn{
+  width: 20px;
+  height: 20px;
+  border: 2px solid #444;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+
+.correct-answer{
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+input[type = "radio"]:checked + span + .correct-answer{
+  opacity: 1;
+  color: green;
+}
+
+.wrong-answer{
+  opacity: 0;
+  color: rgb(231, 11, 11);
+  transition: opacity 0.4s ease;
+}
+
+input[type = "radio"]:checked + span + .wrong-answer{
+  opacity: 1;
+}
+
