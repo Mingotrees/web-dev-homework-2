@@ -82,7 +82,7 @@ body {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.navbar-menu a:hover {
+.navbar-menu .navClick:hover {
   transform: scale(1.05);
   box-shadow: 6px 9px 0 0 #b8794d;
 }
@@ -258,19 +258,18 @@ body {
   --light-yellow: #fffbda;
 }
 
-.container{
+.container {
   max-width: 1600px;
   padding: 0 2rem;
   margin: 0 auto;
 }
 
-
-.quiz{
+.quiz {
   display: flex;
   flex-direction: column;
 }
 
-.item{
+.item {
   margin: 1rem auto;
   width: 90%;
   height: 200px;
@@ -278,13 +277,13 @@ body {
   justify-content: center;
   flex-direction: column;
   border-radius: 40px;
-  background-color: var(--yellow);;
+  background-color: var(--yellow);
   padding: 0.5rem;
   box-shadow: 5px 10px var(--dark-orange);
   border: #444 solid;
 }
 
-.question{
+.question {
   margin: 1rem 1rem;
   width: 100%;
   word-wrap: break-word;
@@ -296,17 +295,17 @@ body {
   margin-left: 1rem;
   margin-top: 2.5rem;
   margin-bottom: 0.2rem;
-  text-shadow: 2px 2px 0px #B8794D;
+  text-shadow: 2px 2px 0px #b8794d;
   paint-order: stroke fill;
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: var(--dark-orange);
   font-family: 'Dynapuff';
-  font-weight:bold;
+  font-weight: bold;
   color: var(--light-yellow);
   font-size: 40px;
 }
 
-.question label{
+.question label {
   font-size: 1.4rem;
   width: 90%;
   padding-left: 2.8rem;
@@ -317,28 +316,28 @@ body {
   font-weight: bold;
 }
 
-#last{
+#last {
   margin-bottom: 2rem;
 }
 
-label{
+label {
   margin-bottom: 5px;
 }
 
-label:hover{
+label:hover {
   background-color: var(--dark-orange);
   border-radius: 40px;
 }
 
-input[type="radio"]:checked{
+input[type='radio']:checked {
   accent-color: red;
 }
 
-label input[type="radio"]#c_a:checked{
+label input[type='radio']#c_a:checked {
   accent-color: green;
 }
 
-.radio-btn{
+.radio-btn {
   width: 20px;
   height: 20px;
   border: 2px solid #444;
@@ -349,72 +348,73 @@ label input[type="radio"]#c_a:checked{
   margin-left: 30px;
 }
 
-
-.correct-answer{
+.correct-answer {
   opacity: 0;
   transition: opacity 0.4s ease-in;
   margin-left: 20px;
 }
 
-input[type = "radio"]:checked + span + .correct-answer{
+input[type='radio']:checked + span + .correct-answer {
   opacity: 1;
   color: green;
 }
 
-.wrong-answer{
+.wrong-answer {
   opacity: 0;
   color: rgb(231, 11, 11);
   transition: opacity 0.4s ease;
   margin-left: 20px;
 }
 
-input[type = "radio"]:checked + span + .wrong-answer{
+input[type='radio']:checked + span + .wrong-answer {
   opacity: 1;
 }
 
-.quiz_navbar{
+.quiz_navbar {
   list-style: none;
   text-decoration: none;
 }
 
-.important{
+.important {
   position: relative;
   z-index: 999;
 }
 
-.dropdown a{
+.dropdown a {
   color: black;
   padding: 0 1rem;
   background-color: var(--light-yellow);
   width: 240px;
   height: 90px;
   border: solid var(--dark-orange) 4px;
-  border-radius: 0px 0px 25px 25px ;
+  border-radius: 0px 0px 25px 25px;
   transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s linear;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border-top: none;
 }
 
 .dropdown a:hover {
-  transform: scale(1.00);
-  box-shadow: 6px 9px 0 0 #b8794d;
   color: var(--dark-orange);
 }
 
-.child2{
+.dropdown a:hover .important {
+  border-bottom: none;
+}
+
+.child2 {
   position: relative;
   z-index: 999;
   margin: -1.5rem;
   margin-left: 0.02rem;
 }
 
-.dropdown{
+.dropdown {
   display: flex;
   flex-direction: column;
-  margin: -1rem .41rem;
+  margin: -1rem 0.41rem;
 }
 
-li ul.dropdown{
+li ul.dropdown {
   position: absolute;
   z-index: 500;
   opacity: 0;
@@ -422,7 +422,7 @@ li ul.dropdown{
   transition: opacity 0.3s linear;
 }
 
-li:hover ul.dropdown{
+li:hover ul.dropdown {
   visibility: visible;
   opacity: 1;
 }
