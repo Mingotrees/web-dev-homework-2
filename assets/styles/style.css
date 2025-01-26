@@ -371,3 +371,58 @@ input[type = "radio"]:checked + span + .correct-answer{
 input[type = "radio"]:checked + span + .wrong-answer{
   opacity: 1;
 }
+
+.quiz_navbar{
+  list-style: none;
+  text-decoration: none;
+}
+
+.important{
+  position: relative;
+  z-index: 999;
+}
+
+.dropdown a{
+  color: black;
+  padding: 0 1rem;
+  background-color: var(--light-yellow);
+  width: 240px;
+  height: 90px;
+  border: solid var(--dark-orange) 4px;
+  border-radius: 0px 0px 25px 25px ;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s linear;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-top: none;
+}
+
+.dropdown a:hover {
+  transform: scale(1.00);
+  box-shadow: 6px 9px 0 0 #b8794d;
+  color: var(--dark-orange);
+}
+
+.child2{
+  position: relative;
+  z-index: 999;
+  margin: -1.5rem;
+  margin-left: 0.02rem;
+}
+
+.dropdown{
+  display: flex;
+  flex-direction: column;
+  margin: -1rem .41rem;
+}
+
+li ul.dropdown{
+  position: absolute;
+  z-index: 500;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s linear;
+}
+
+li:hover ul.dropdown{
+  visibility: visible;
+  opacity: 1;
+}
