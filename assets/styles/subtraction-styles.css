@@ -1,11 +1,5 @@
 /* @import url('../assets/styles/style.css'); */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .subt-container {
   display: flex;
   flex-direction: row;
@@ -26,32 +20,35 @@
 
 .exmpl {
   color: #fffbda;
-  width: 449px;
-  height: 89px;
-  flex-shrink: 0;
   text-shadow: 7px 4px 0px #b8794d;
   paint-order: stroke fill;
-  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-width: 11px;
   -webkit-text-stroke-color: #ed9455;
   font-family: DynaPuff;
-  font-size: 96px;
+  font-size: 4.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-align: left;
 }
 
 .img-container {
-  margin: 20px;
+  width: 750px;
 }
 
-.text {
-  margin: 0 auto;
-  width: 80%;
+.text p {
+  margin-top: 1.7rem;
+  color: #000;
+  font-family: 'Average Sans';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 65px; /* 203.125% */
   text-align: center;
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: 65px;
@@ -70,4 +67,32 @@ h3 {
 
 .exmp-box {
   padding: 5px;
+}
+
+h2 {
+  color: #fffbda;
+  text-shadow: 7px 4px 0px #b8794d;
+  paint-order: stroke fill;
+  -webkit-text-stroke-width: 11px;
+  -webkit-text-stroke-color: #ed9455;
+  font-family: DynaPuff;
+  font-size: 180px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.math-info h2 {
+  color: #fffbda;
+  text-shadow: 7px 4px 0px #b8794d;
+  paint-order: stroke fill;
+  -webkit-text-stroke-width: 11px;
+  -webkit-text-stroke-color: #ed9455;
+  font-family: DynaPuff;
+  font-size: 104px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
 }

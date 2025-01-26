@@ -17,46 +17,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/styles/subtraction-styles.css" />
-    <link rel="stylesheet" href="../assets/styles/style.css" />
+
     <title>tabangi ko lord</title>
   </head>
   <body>
     <div class="navbar">
       <div class="navbar-flex">
         <div class="profile">
-          <img src="../assets/images/profile.svg" alt="" />
+          <img src="./assets/images/3.svg" alt="" />
         </div>
 
         <div class="navbar-menu">
-          <a href="index.html">
+          <a href="index.html" class="navClick">
             <h3>Home</h3>
-            <img src="../assets/images/home.svg" alt="" />
+            <img src="./assets/images/home.svg" alt="" />
           </a>
-          <a href="#">
+          <a href="ADDITION.html" class="navClick">
             <h3>Addition</h3>
-            <img src="../assets/images/addition.svg" alt="" />
+            <img src="./assets/images/addition.svg" alt="" />
           </a>
-          <a href="#">
+          <a href="subtraction.html" class="navClick">
             <h3>Subtraction</h3>
-            <img src="../assets/images/subtraction.svg" alt="" />
+            <img src="./assets/images/subtraction.svg" alt="" />
           </a>
-          <a href="#">
-            <h3>Quiz</h3>
-            <img src="../assets/images/quiz.svg" alt="" />
-          </a>
+          <li class="quiz_navbar">
+            <a href="#" class="important">
+              <h3>Quiz</h3>
+              <img src="./assets/images/quiz.svg" alt="" />
+            </a>
+            <ul class="dropdown">
+              <li><a href="add-quiz.html" class="child1">Addition Quiz</a></li>
+              <li><a href="sub-quiz.html" class="child2">Subtraction Quiz</a></li>
+            </ul>
+          </li>
         </div>
       </div>
     </div>
     <!-- Title Part -->
 
     <div class="title container">
-      <div class="face"><img src="../assets/images/nawng.svg" alt="" /></div>
+      <div class="face">
+        <img src="./assets/images/LEARN WITH KUYA NEL.gif" alt="" />
+      </div>
       <div class="title-text">
         <h1 class="learn">LEARN MATHS WITH</h1>
         <h1 class="nel">Kuya Jhanell!</h1>
       </div>
     </div>
-
     <!-- Divider -->
 
     <div class="line container"></div>
@@ -73,18 +80,18 @@
           </p>
         </div>
         <div class="subt-img">
-          <img src="./assets/images/subt sign dako.svg" alt="" />
+          <img src="./assets/images/2.svg" alt="" />
         </div>
       </div>
     </div>
-    <br />
+
     <div class="container" style="text-align: center">
       <h2 class="exmpl">Example:</h2>
     </div>
 
     <div class="math-info container" style="text-align: center">
-      <div class="img-container">
-        <img src="./assets/images/subtex1.svg" alt="" />
+      <div class="img-container container">
+        <img src="./assets/images/sub1.svg" alt="" />
       </div>
       <div class="text">
         <p>
@@ -92,8 +99,8 @@
           Currently, his kitchen has <b>7</b> pineapples.
         </p>
       </div>
-      <div class="img-container">
-        <img src="./assets/images/Group 35.png" alt="" />
+      <div class="img-container container">
+        <img src="./assets/images/sub2.svg" alt="" />
       </div>
       <div class="text">
         <p>
@@ -138,7 +145,7 @@
       <div class="line container"></div>
       <h2 style>If you are READY, take the QUIZ!! Good luck!</h2>
       <div class="btn-container">
-        <a href="#" class="addition-btn">QUIZ</a>
+        <a href="sub-quiz.html" class="addition-btn">QUIZ</a>
       </div>
       <div class="line container"></div>
     </div>
